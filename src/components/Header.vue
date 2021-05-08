@@ -8,8 +8,8 @@
       <b-collapse id="nav-collapse" class="mt-2" is-nav>
         <b-navbar-nav class="ml-auto mb-3">
             <template v-if="isCollapsed"> <!-- Collapsed menu is open (menu is down) , can be toggled to close menu (more for mobile)-->
-              <b-button class="button-list-item" v-b-toggle.nav-collapse @click="scrollToSection('About')">About</b-button>
-              <b-button class="button-list-item" v-b-toggle.nav-collapse @click="scrollToSection('Projects')">Projects</b-button>
+              <b-button class="button-list-item" v-b-toggle.nav-collapse @click="scrollToSection('About-Anchor')">About</b-button>
+              <b-button class="button-list-item" v-b-toggle.nav-collapse @click="scrollToSection('Projects-Anchor')">Projects</b-button>
               <b-button class="button-list-item" v-b-toggle.nav-collapse @click="scrollToSection">Experience</b-button>
               <b-button class="button-list-item" v-b-toggle.nav-collapse @click="scrollToSection">Education</b-button>
               <b-button class="button-list-item" v-b-toggle.nav-collapse @click="scrollToSection">Recipes</b-button>
@@ -42,7 +42,8 @@ export default {
       console.log(sectionText);
       // Scroll to section
       document.getElementById(sectionText).scrollIntoView({
-        behavior: "smooth",
+        behavior: 'smooth',
+        block: 'start',
       })
     },
     // Event listener for when user expands window making navbar not longer collapsed (causes opacity changes  to remain, need to remove when no longer collapsable)

@@ -1,11 +1,14 @@
 <template>
   <div class="Main-Body" id="Main-Body">
     <section id="About">
+      <div id="About-Anchor" style="position: relative; top: -90px; left: 0"></div>
+      <h1 class="About-Name">Justin Bifeld</h1>
       <p class="About-Text">
         About Text - Coming Soon!
       </p>
     </section>
     <section id="Projects">
+      <div id="Projects-Anchor" style="position: relative; top: -90px; left: 0"></div>
       <p class="Projects-Text">
         Projects Text - Coming Soon!
       </p>
@@ -43,9 +46,15 @@ export default {
 .About-Text{
   color: white;
 }
+.webgl{
+  position: fixed;
+  top: 0;
+  left: 0;
+  outline: none;
+}
 #Projects{
   width: 100%;
-  height: 500px;
+  height: 1000px;
   background: rgb(116, 99, 5);
 }
 .Projects-Text{
