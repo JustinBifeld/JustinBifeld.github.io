@@ -27,7 +27,7 @@
 </script>
 
 <script>
-
+import gsap from "gsap";
 export default {
   name: 'Header',
   props: {
@@ -43,7 +43,7 @@ export default {
     
     const h1 = document.getElementById("About-Name")
     const tl = gsap.timeline()
-    tl.to(h1, { duration: 2, clipPath: 'polygon(0 0, 100% 0, 100% 100%, 0% 100%)'})
+    tl.to(h1, { duration: 8, delay: 0.5, clipPath: 'polygon(0 0, 100% 0, 100% 100%, 0% 100%)'})
   }
 }
 </script>
@@ -70,7 +70,8 @@ export default {
   color: white;
 }
 #About-Name{
-  clip-path: polygon(0 0, 100% 0, 100% 0, 0 0);
+  clip-path: polygon(0 0, 0 0, 0 100%, 0 100%);
+  color: white;
 }
 .webgl{
   position: fixed;
