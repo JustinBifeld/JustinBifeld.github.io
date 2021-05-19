@@ -15,8 +15,8 @@
               <b-button class="button-list-item" v-b-toggle.nav-collapse @click="scrollToSection">Recipes</b-button>
             </template>
             <template v-else> <!-- Collapsed menu is closed (menu is up), can't be toggled change menu (more for desltop) -->
-              <b-button class="button-list-item" @click="scrollToSection('About')">About</b-button>
-              <b-button class="button-list-item" @click="scrollToSection('Projects')">Projects</b-button>
+              <b-button class="button-list-item" @click="scrollToSection('About-Anchor')">About</b-button>
+              <b-button class="button-list-item" @click="scrollToSection('Projects-Anchor')">Projects</b-button>
               <b-button class="button-list-item" @click="scrollToSection">Experience</b-button>
               <b-button class="button-list-item" @click="scrollToSection">Education</b-button>
               <b-button class="button-list-item" @click="scrollToSection">Recipes</b-button>
