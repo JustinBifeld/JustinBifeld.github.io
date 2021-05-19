@@ -62,17 +62,24 @@ export default {
 
 <!-- Add "scoped" attribute to limit CSS to this component only -->
 <style scoped>
+.header{
+  background: rgb(33, 29, 53);
+  height: 90px;
+  width: 100%;
+}
 .navbar{
-  background: black;
+  background: rgb(40, 38, 46);
   text-align: center;
   width: 100%;
   position: fixed;
+
 }
 .name{
   font-weight: bold;
   font-size: 30px;
   margin-top: 10px;
   margin-bottom: 10px;
+  margin-left: 30px;
   left: 5%;
 }
 .button-list-item{

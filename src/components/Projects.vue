@@ -1,30 +1,27 @@
 <template>
-  <div class="Main-Body" id="Main-Body">
-    <!-- About Section -->
-    <section id="About">
-
-        <div class='light x1'></div>
-        <div class='light x2'></div>
-        <div class='light x3'></div>
-        <div class='light x4'></div>
-        <div class='light x5'></div>
-        <div class='light x6'></div>
-        <div class='light x7'></div>
-        <div class='light x8'></div>
-        <div class='light x9'></div>
-
-      <div id="About-Anchor" style="position: relative; top: -90px; left: 0"></div>
-      <b-img id="Me-Image" class="fixed_width" src="../assets/Justin_Profile_Pic.png"></b-img>
-      <h2 id="About-Line"></h2>
-      <h1 id="About-Name">Justin Bifeld</h1>
-      <h3 id="About-Degree">BS in Computer Engineering</h3>
-      <h4 id="About-School">Univeristy of Illinois at Urbana-Champaign Dec '21</h4>
-      <p class="About-Text">
-        About Text - Coming Soon!
+  <div id="Projects">
+      <div id="Projects-Anchor" style="position: relative; top: -90px; left: 0"></div>
+      <p class="Projects-Text">
+        Projects Text - Coming Soon!
       </p>
-    </section>
-    <!-- Projects Section -->
-
+      <div class="container">
+        <div class="row justify-content-center">
+          <div class="col-md">
+            <div class="card" style="width: 18rem;">
+              <img class="card-img-top" src="../assets/logo.png" alt="Card image cap">
+                <div class="card-body">
+                  <p class="card-text">project 1 Name</p>
+                </div>
+            </div>
+          </div>
+          <div class="col-md">
+            project 2
+          </div>
+          <div class="col-md">
+            project 3
+          </div>
+        </div>
+      </div>
     <!-- Experience Section -->
     <!-- Education Section -->
     <!-- Recipes Section -->
@@ -90,11 +87,16 @@ export default {
   filter: brightness(50%);
 }
 #About{
-  background: rgb(64, 62, 75);
+  background: rgb(13, 13, 60);
   width: 100%;
   height: calc(100vh - 90px);
   min-height: 650px;
-
+  overflow: hidden;
+  overflow-y: hidden;
+  -webkit-overflow-Y: hidden;
+    -moz-overflow-Y: hidden;
+    -o-overflow-Y: hidden;
+    overflow-y: hidden;
 }
 #Me-Image{
   width: 240px;
@@ -174,7 +176,7 @@ export default {
   width: 100%;
   height: 1000px;
   background: rgb(116, 99, 5);
-  z-index: 10;
+  
 }
 .Projects-Text{
   color: white;
