@@ -41,5 +41,9 @@ export default {
   position: absolute;
   top: 0;
 }
+/* Hide Scrollbar */
+::-webkit-scrollbar {
+    display: none;
+}
 
 </style>

@@ -1,38 +1,232 @@
 <template>
+<div>
   <div id="Projects">
       <div id="Projects-Anchor" style="position: relative; top: -90px; left: 0"></div>
-      <p class="Projects-Text">
+      <p class="Projects-Text section-header-text">
         Projects Text - Coming Soon!
       </p>
-      <div class="container">
-        <div class="row justify-content-center">
-          <div class="col-md">
-            <div class="card" style="width: 18rem;">
-              <img class="card-img-top" src="../assets/logo.png" alt="Card image cap">
-                <div class="card-body">
-                  <p class="card-text">project 1 Name</p>
+      <div class="container projects-grid">
+        <div class="row justify-content-center project-row">
+            <div class="col-md-6 col-lg-4 mb-5">
+                <div v-b-modal.project-1 class="card project-card modal-container" content-class="your-class">
+                      <img src = "../assets/logo.png">
+                    <div class="card-body">
+                        <p class="card-text">project 1 Name</p>
+                    </div>
                 </div>
+                <b-modal class="modal fade project-modal" content-class="project-popup" id="project-1" body-class="p-0" ok-only centered title="Project 1">
+                    <div class="container" id = "project-1-body">
+                      <b-img id="project-1-image" class="fixed_width project-image" src="../assets/logo.png"></b-img>
+                      <p1>TESTING</p1>
+                    </div>
+                </b-modal>
             </div>
-          </div>
-          <div class="col-md">
-            project 2
-          </div>
-          <div class="col-md">
-            project 3
-          </div>
+
+            <div class="col-md-6 col-lg-4 mb-5">
+                <div v-b-modal.project-2 class="card project-card modal-container" content-class="your-class">
+                      <img src = "../assets/logo.png">
+                    <div class="card-body">
+                        <p class="card-text">project 2 Name</p>
+                    </div>
+                </div>
+                <b-modal class="modal fade project-modal" content-class="project-popup" id="project-2" body-class="p-0" ok-only centered title="Project 2">
+                    <div class="container" id = "project-2-body">
+                      <b-img id="project-2-image" class="fixed_width project-image" src="../assets/logo.png"></b-img>
+                      <p1>TESTING</p1>
+                    </div>
+                </b-modal>
+            </div>
+            <div class="col-md-6 col-lg-4 mb-5">
+                <div v-b-modal.project-3 class="card project-card modal-container" content-class="your-class">
+                      <img src = "../assets/logo.png">
+                    <div class="card-body">
+                        <p class="card-text">project 3 Name</p>
+                    </div>
+                </div>
+                <b-modal class="modal fade project-modal" content-class="project-popup" id="project-3" body-class="p-0" ok-only centered title="Project 3">
+                    <div class="container" id = "project-3-body">
+                      <b-img id="project-3-image" class="fixed_width project-image" src="../assets/logo.png"></b-img>
+                      <p1>TESTING</p1>
+                    </div>
+                </b-modal>
+            </div>
+      
+       
+            <div class="col-md-6 col-lg-4 mb-5">
+                <div v-b-modal.project-4 class="card project-card modal-container" content-class="your-class">
+                      <img src = "../assets/logo.png">
+                    <div class="card-body">
+                        <p class="card-text">project 4 Name</p>
+                    </div>
+                </div>
+                <b-modal class="modal fade" content-class="project-popup" id="project-4" body-class="p-0" ok-only centered title="Project 4">
+                    <div class="container" id = "project-4-body">
+                      <b-img id="project-4-image" class="fixed_width project-image" src="../assets/logo.png"></b-img>
+                      <p1>TESTING</p1>
+                    </div>
+                </b-modal>
+            </div>
+
+            <div class="col-md-6 col-lg-4 mb-5">
+                <div v-b-modal.project-5 class="card project-card modal-container" content-class="your-class">
+                      <img src = "../assets/logo.png">
+                    <div class="card-body">
+                        <p class="card-text">project 5 Name</p>
+                    </div>
+                </div>
+                <b-modal class="modal fade" content-class="project-popup" id="project-5" body-class="p-0" ok-only centered title="Project 5">
+                    <div class="container" id = "project-5-body">
+                      <b-img id="project-5-image" class="fixed_width project-image" src="../assets/logo.png"></b-img>
+                      <p1>TESTING</p1>
+                    </div>
+                </b-modal>
+            </div>
+            <div class="col-md-6 col-lg-4 mb-5">
+                <div v-b-modal.project-6 class="card project-card modal-container" content-class="your-class">
+                      <img src = "../assets/logo.png">
+                    <div class="card-body">
+                        <p class="card-text">project 6 Name</p>
+                    </div>
+                </div>
+                <b-modal class="modal fade" content-class="project-popup" id="project-6" body-class="p-0" ok-only centered title="Project 6">
+                    <div class="container" id = "project-6-body">
+                      <b-img id="project-6-image" class="fixed_width project-image" src="../assets/logo.png"></b-img>
+                      <p1>TESTING</p1>
+                    </div>
+                </b-modal>
+            </div>
         </div>
       </div>
-    <!-- Experience Section -->
-    <!-- Education Section -->
-    <!-- Recipes Section -->
-    <!-- Contact Section -->
   </div>
+
+<!-- Experience Section -->
+  <div id="Experience">
+      <div id="Experience-Anchor" style="position: relative; top: -90px; left: 0"></div>
+      <p class="Experience-Text section-header-text">
+        Experience Text - Coming Soon!
+      </p>
+      <div class="container projects-grid">
+        <div class="row justify-content-center project-row">
+            <div class="col-md-6 col-lg-4 mb-5">
+                <div v-b-modal.Experience-1 class="card project-card modal-container" content-class="your-class">
+                      <img src = "../assets/logo.png">
+                    <div class="card-body">
+                        <p class="card-text">Experience 1 Name</p>
+                    </div>
+                </div>
+                <b-modal class="modal fade project-modal" content-class="project-popup" id="Experience-1" body-class="p-0" ok-only centered title="Experience 1">
+                    <div class="container" id = "Experience1-body">
+                      <b-img id="Experience-1-image" class="fixed_width project-image" src="../assets/logo.png"></b-img>
+                      <p1>TESTING</p1>
+                    </div>
+                </b-modal>
+            </div>
+
+            <div class="col-md-6 col-lg-4 mb-5">
+                <div v-b-modal.Experience-2 class="card project-card modal-container" content-class="your-class">
+                      <img src = "../assets/logo.png">
+                    <div class="card-body">
+                        <p class="card-text">Experience 2 Name</p>
+                    </div>
+                </div>
+                <b-modal class="modal fade project-modal" content-class="project-popup" id="Experience-2" body-class="p-0" ok-only centered title="Experience 2">
+                    <div class="container" id = "Experience-2-body">
+                      <b-img id="Experience-2-image" class="fixed_width project-image" src="../assets/logo.png"></b-img>
+                      <p1>TESTING</p1>
+                    </div>
+                </b-modal>
+            </div>
+            <div class="col-md-6 col-lg-4 mb-5">
+                <div v-b-modal.Experience-3 class="card project-card modal-container" content-class="your-class">
+                      <img src = "../assets/logo.png">
+                    <div class="card-body">
+                        <p class="card-text">Experience 3 Name</p>
+                    </div>
+                </div>
+                <b-modal class="modal fade project-modal" content-class="project-popup" id="Experience-3" body-class="p-0" ok-only centered title="Experience 3">
+                    <div class="container" id = "Experience-3-body">
+                      <b-img id="Experience-3-image" class="fixed_width project-image" src="../assets/logo.png"></b-img>
+                      <p1>TESTING</p1>
+                    </div>
+                </b-modal>
+            </div>
+        </div>
+      </div>
+  </div>
+
+  <!-- Education Section -->
+  <div id="Education">
+      <div id="Education-Anchor" style="position: relative; top: -90px; left: 0"></div>
+      <p class="Education-Text section-header-text">
+        Education Text - Coming Soon!
+      </p>
+      <div class="container projects-grid">
+        <div class="row justify-content-center project-row">
+            <div class="col-md-6 col-lg-4 mb-5">
+                <div v-b-modal.Education-1 class="card project-card modal-container" content-class="your-class">
+                      <img src = "../assets/logo.png">
+                    <div class="card-body">
+                        <p class="card-text">Education 1 Name</p>
+                    </div>
+                </div>
+                <b-modal class="modal fade project-modal" content-class="project-popup" id="Education-1" body-class="p-0" ok-only centered title="Education 1">
+                    <div class="container" id = "Education1-body">
+                      <b-img id="Education-1-image" class="fixed_width project-image" src="../assets/logo.png"></b-img>
+                      <p1>TESTING</p1>
+                    </div>
+                </b-modal>
+            </div>
+
+            <div class="col-md-6 col-lg-4 mb-5">
+                <div v-b-modal.Education-2 class="card project-card modal-container" content-class="your-class">
+                      <img src = "../assets/logo.png">
+                    <div class="card-body">
+                        <p class="card-text">Education 2 Name</p>
+                    </div>
+                </div>
+                <b-modal class="modal fade project-modal" content-class="project-popup" id="Education-2" body-class="p-0" ok-only centered title="Education 2">
+                    <div class="container" id = "Education-2-body">
+                      <b-img id="Education-2-image" class="fixed_width project-image" src="../assets/logo.png"></b-img>
+                      <p1>TESTING</p1>
+                    </div>
+                </b-modal>
+            </div>
+        </div>
+      </div>
+  </div>
+  <!-- Recipes Section -->
+  <!-- Contact Section -->
+  <div id="Contact">
+      <div id="Contact-Anchor" style="position: relative; top: -90px; left: 0"></div>
+      <p class="Contact-Text section-header-text">
+        Contact Text - Coming Soon!
+      </p>
+      <b-icon icon="arrow-up"></b-icon>
+  </div>
+</div>
 </template>
 
 <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.6.1/gsap.min.js" integrity="sha512-cdV6j5t5o24hkSciVrb8Ki6FveC2SgwGfLE31+ZQRHAeSRxYhAQskLkq3dLm8ZcWe1N3vBOEYmmbhzf7NTtFFQ==" crossorigin="anonymous"></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.6.1/CSSRulePlugin.min.js" integrity="sha512-0bzaetZStCnsUgbCtGVxftzF/L32PNOnrMlYLXwBOKl8cUjTSSDfJVyyJsNwGoI0iE0WUqni2eEfO35kJjFj5g==" crossorigin="anonymous"></script>
 
 
+<script>
+import { Vue } from 'vue'
+import { BootstrapVue, BootstrapVueIcons } from 'bootstrap-vue'
+import 'bootstrap/dist/css/bootstrap.css'
+import 'bootstrap-vue/dist/bootstrap-vue.css'
+
+Vue.use(BootstrapVue)
+Vue.use(BootstrapVueIcons)
+</script>
+<head>
+  <link type="text/css" rel="stylesheet" href="//unpkg.com/bootstrap/dist/css/bootstrap.min.css" />
+  <link type="text/css" rel="stylesheet" href="//unpkg.com/bootstrap-vue@latest/dist/bootstrap-vue.min.css" />
+  <!-- Load Vue followed by BootstrapVue, and BootstrapVueIcons -->
+  <script src="//unpkg.com/vue@latest/dist/vue.min.js"></script>
+  <script src="//unpkg.com/bootstrap-vue@latest/dist/bootstrap-vue.min.js"></script>
+  <script src="//unpkg.com/bootstrap-vue@latest/dist/bootstrap-vue-icons.min.js"></script>
+</head>
 
 
 <script>
@@ -75,268 +269,68 @@ export default {
 
 <!-- Add "scoped" attribute to limit CSS to this component only -->
 <style scoped>
-.Main-Body{
-  width: 100%;
-  height: 100%;
-  background: linear-gradient(0deg, #4e94da 0%, #34004b 100%);
-  top: 90px;
-  position: absolute;
-}
-.grayed{
-  /*Change brightness of everything except header, used when header collapsable menu is opened*/
-  filter: brightness(50%);
-}
-#About{
-  background: rgb(13, 13, 60);
-  width: 100%;
-  height: calc(100vh - 90px);
-  min-height: 650px;
-  overflow: hidden;
-  overflow-y: hidden;
-  -webkit-overflow-Y: hidden;
-    -moz-overflow-Y: hidden;
-    -o-overflow-Y: hidden;
-    overflow-y: hidden;
-}
-#Me-Image{
-  width: 240px;
-  height: 240px;
-  max-width: 240px;
-  max-height: 240px;
-  margin: 50px;
-  opacity: 0;
-  color: white;
-  animation: fadeIn 2s forwards;
-  animation-delay: 2s;
-  -webkit-transform: translate3d(0, 0, 0);
-  transform: translate3d(0, 0, 0);
-}
-#About-Name{
-  clip-path: polygon(0 0, 0 0, 0 100%, 0 100%);
-  color: white;
-  text-align: center;
-  width: max-content;
-  position: relative;
-}
-#About-Line{
-  height: 1px;
-  width: 0;
-  background-color:rgb(255, 255, 255);
-  animation:grow 4s forwards;
-  animation-delay: 1s;
-  position:relative;
-  margin-bottom: 50px;
-}
-@keyframes grow{
-  0% {
-    width: 0%;
-    left: 50%;
-  }
-  100%{
-    width: 90%;
-    margin-left: 5%;
-    margin-right: 5%;
-    left: 0%;
-  }
-}
-#About-Degree{
-  color: white;
-  animation: fadeIn 2s forwards;
-  animation-delay: 2s;
-  opacity: 0;
-}
-#About-School{
-  color: white;
-  animation: fadeIn 2s forwards;
-  animation-delay: 2s;
-  opacity: 0;
-}
-.About-Text{
-  color: white;
-  animation: fadeIn 2s forwards;
-  animation-delay: 2s;
-  opacity: 0;
-}
-@keyframes fadeIn{
-  0%{
-    opacity: 0;
-  }
-  100%{
-    opacity: 1;
-  }
-}
-
-.webgl{
-  position: fixed;
-  top: 0;
-  left: 0;
-  outline: none;
-}
 #Projects{
   width: 100%;
-  height: 1000px;
-  background: rgb(116, 99, 5);
-  
+  height: auto;
+  background: rgb(30, 24, 49);
 }
-.Projects-Text{
+.section-header-text{
   color: white;
+  font-size: 30px;
+}
+.projects-grid{
+  background: white;
+}
+.project-card{
+    background: black;
+    color: white;
+    border-radius: 20px;
+    padding: 10px;
+}
+.project-image-button{
+    border: black;
+}
+.projects-grid{
+  padding: 20px;
+  background: rgb(30, 24, 49);
+}
+.project-row{
+  margin: 20px
+}
+.project-image{
+  width: 100%;
+}
+#Experience{
+  width: 100%;
+  height: auto;
+  background: rgb(202, 124, 60);
+}
+#Education{
+  width: 100%;
+  height: auto;
+  background: rgb(77, 9, 80);
+}
+#Contact{
+  width: 100%;
+  height: auto;
+  background: rgb(26, 6, 100);
+}
+/deep/ .modal-body { 
+  text-align: center;
 }
 
-
-
-.light {
-    position: absolute;
-    width: 0px;
-    opacity: .75;
-    background-color: white;
-    box-shadow: #e9f1f1 0px 0px 20px 2px;
-    opacity: 0;
-    top: 100vh;
-    bottom: 0px;
-    left: 0px;
-    right: 0px;
-    margin: auto;
-    -webkit-overflow-Y: hidden;
-    -moz-overflow-Y: hidden;
-    -o-overflow-Y: hidden;
-    overflow-y: hidden;
+#project-modal{
+  background: black !important;
 }
-
-.x1{
-  -webkit-animation: floatUp 4s infinite linear;
-  -moz-animation: floatUp 4s infinite linear;
-  -o-animation: floatUp 4s infinite linear;
-  animation: floatUp 4s infinite linear;
-   -webkit-transform: scale(1.0);
-   -moz-transform: scale(1.0);
-   -o-transform: scale(1.0);
-  transform: scale(1.0);
+/deep/ .project-popup {
+  background: grey;
 }
-
-.x2{
-  -webkit-animation: floatUp 7s infinite linear;
-  -moz-animation: floatUp 7s infinite linear;
-  -o-animation: floatUp 7s infinite linear;
-  animation: floatUp 7s infinite linear;
-  -webkit-transform: scale(1.6);
-  -moz-transform: scale(1.6);
-  -o-transform: scale(1.6);
-  transform: scale(1.6);
-  left: 15%;
+/deep/ .modal-header {
+  border-color: red;
 }
-
-.x3{
-  -webkit-animation: floatUp 2.5s infinite linear;
-  -moz-animation: floatUp 2.5s infinite linear;
-  -o-animation: floatUp 2.5s infinite linear;
-  animation: floatUp 2.5s infinite linear;
-  -webkit-transform: scale(.5);
-  -moz-transform: scale(.5);
-  -o-transform: scale(.5);
-  transform: scale(.5);
-  left: -15%;
-}
-
-.x4{
-  -webkit-animation: floatUp 4.5s infinite linear;
-  -moz-animation: floatUp 4.5s infinite linear;
-  -o-animation: floatUp 4.5s infinite linear;
-  animation: floatUp 4.5s infinite linear;
-  -webkit-transform: scale(1.2);
-  -moz-transform: scale(1.2);
-  -o-transform: scale(1.2);
-  transform: scale(1.2);
-  left: -34%;
-}
-
-.x5{
-  -webkit-animation: floatUp 8s infinite linear;
-  -moz-animation: floatUp 8s infinite linear;
-  -o-animation: floatUp 8s infinite linear;
-  animation: floatUp 8s infinite linear;
-  -webkit-transform: scale(2.2);
-  -moz-transform: scale(2.2);
-  -o-transform: scale(2.2);
-  transform: scale(2.2);
-  left: -57%;
-}
-
-.x6{
-  -webkit-animation: floatUp 3s infinite linear;
-  -moz-animation: floatUp 3s infinite linear;
-  -o-animation: floatUp 3s infinite linear;
-  animation: floatUp 3s infinite linear;
-  -webkit-transform: scale(.8);
-  -moz-transform: scale(.8);
-  -o-transform: scale(.8);
-  transform: scale(.8);
-  left: -81%;
-}
-
-.x7{
-  -webkit-animation: floatUp 5.3s infinite linear;
-  -moz-animation: floatUp 5.3s infinite linear;
-  -o-animation: floatUp 5.3s infinite linear;
-  animation: floatUp 5.3s infinite linear;
-  -webkit-transform: scale(3.2);
-  -moz-transform: scale(3.2);
-  -o-transform: scale(3.2);
-  transform: scale(3.2);
-  left: 37%;
-}
-
-.x8{
-  -webkit-animation: floatUp 4.7s infinite linear;
-  -moz-animation: floatUp 4.7s infinite linear;
-  -o-animation: floatUp 4.7s infinite linear;
-  animation: floatUp 4.7s infinite linear;
-  -webkit-transform: scale(1.7);
-  -moz-transform: scale(1.7);
-  -o-transform: scale(1.7);
-  transform: scale(1.7);
-  left: 62%;
-}
-
-.x9{
-  -webkit-animation: floatUp 4.1s infinite linear;
-  -moz-animation: floatUp 4.1s infinite linear;
-  -o-animation: floatUp 4.1s infinite linear;
-  animation: floatUp 4.1s infinite linear;
-  -webkit-transform: scale(0.9);
-  -moz-transform: scale(0.9);
-  -o-transform: scale(0.9);
-  transform: scale(0.9);
-  left: 85%;
-}
-
-
-@-webkit-keyframes floatUp{
-  0%{top: 100vh; opacity: 0;}
-  25%{opacity: 1;}
-  50%{top: 0vh; opacity: .8;}
-  75%{opacity: 1;}
-  100%{top: -100vh; opacity: 0;}
-}
-@-moz-keyframes floatUp{
-  0%{top: 100vh; opacity: 0;}
-  25%{opacity: 1;}
-  50%{top: 0vh; opacity: .8;}
-  75%{opacity: 1;}
-  100%{top: -100vh; opacity: 0;}
-}
-@-o-keyframes floatUp{
-  0%{top: 100vh; opacity: 0;}
-  25%{opacity: 1;}
-  50%{top: 0vh; opacity: .8;}
-  75%{opacity: 1;}
-  100%{top: -100vh; opacity: 0;}
-}
-@keyframes floatUp{
-  0%{top: 100vh; opacity: 0;}
-  25%{opacity: 1;}
-  50%{top: 0vh; opacity: .8;}
-  75%{opacity: 1;}
-  100%{top: -100vh; opacity: 0;}
+/deep/ .modal-footer {
+  border-color: red;
 }
 
 </style>
+

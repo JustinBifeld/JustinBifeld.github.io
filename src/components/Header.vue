@@ -10,16 +10,16 @@
             <template v-if="isCollapsed"> <!-- Collapsed menu is open (menu is down) , can be toggled to close menu (more for mobile)-->
               <b-button class="button-list-item" v-b-toggle.nav-collapse @click="scrollToSection('About-Anchor')">About</b-button>
               <b-button class="button-list-item" v-b-toggle.nav-collapse @click="scrollToSection('Projects-Anchor')">Projects</b-button>
-              <b-button class="button-list-item" v-b-toggle.nav-collapse @click="scrollToSection">Experience</b-button>
-              <b-button class="button-list-item" v-b-toggle.nav-collapse @click="scrollToSection">Education</b-button>
-              <b-button class="button-list-item" v-b-toggle.nav-collapse @click="scrollToSection">Recipes</b-button>
+              <b-button class="button-list-item" v-b-toggle.nav-collapse @click="scrollToSection('Experience-Anchor')">Experience</b-button>
+              <b-button class="button-list-item" v-b-toggle.nav-collapse @click="scrollToSection('Education-Anchor')">Education</b-button>
+              <b-button class="button-list-item" v-b-toggle.nav-collapse @click="scrollToSection('Contact-Anchor')">Contact</b-button>
             </template>
             <template v-else> <!-- Collapsed menu is closed (menu is up), can't be toggled change menu (more for desltop) -->
               <b-button class="button-list-item" @click="scrollToSection('About-Anchor')">About</b-button>
               <b-button class="button-list-item" @click="scrollToSection('Projects-Anchor')">Projects</b-button>
-              <b-button class="button-list-item" @click="scrollToSection">Experience</b-button>
-              <b-button class="button-list-item" @click="scrollToSection">Education</b-button>
-              <b-button class="button-list-item" @click="scrollToSection">Recipes</b-button>
+              <b-button class="button-list-item" @click="scrollToSection('Experience-Anchor')">Experience</b-button>
+              <b-button class="button-list-item" @click="scrollToSection('Education-Anchor')">Education</b-button>
+              <b-button class="button-list-item" @click="scrollToSection('Contact-Anchor')">Contact</b-button>
             </template>
         </b-navbar-nav>
       </b-collapse>
