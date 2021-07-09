@@ -1,5 +1,6 @@
 <template>
-<div>
+<div class="sections">
+  <div class="border-line-1"></div>
   <div id="Projects">
       <div id="Projects-Anchor" style="position: relative; top: -90px; left: 0"></div>
       <p class="Projects-Text section-header-text">
@@ -100,6 +101,7 @@
   </div>
 
 <!-- Experience Section -->
+  <div class="border-line-2"></div>
   <div id="Experience">
       <div id="Experience-Anchor" style="position: relative; top: -90px; left: 0"></div>
       <p class="Experience-Text section-header-text">
@@ -155,6 +157,7 @@
   </div>
 
   <!-- Education Section -->
+  <div class="border-line-2"></div>
   <div id="Education">
       <div id="Education-Anchor" style="position: relative; top: -90px; left: 0"></div>
       <p class="Education-Text section-header-text">
@@ -196,12 +199,33 @@
   </div>
   <!-- Recipes Section -->
   <!-- Contact Section -->
+  <div class="border-line-2"></div>
   <div id="Contact">
       <div id="Contact-Anchor" style="position: relative; top: -90px; left: 0"></div>
       <p class="Contact-Text section-header-text">
         Contact Text - Coming Soon!
       </p>
-      <b-icon icon="arrow-up"></b-icon>
+      <link rel="stylesheet" 
+        href="https://use.fontawesome.com/releases/v5.2.0/css/all.css" 
+        integrity="sha384-hWVjflwFxL6sNzntih27bfxkr27PmbbK/iSvJ+a4+0owXq79v+lsFkW54bOGbiDQ" 
+        crossorigin="anonymous">
+      <div class="container projects-grid">
+        <div class="row justify-content-center project-row">
+          <div class="col-md-6 col-lg-2 mb-5">
+            <h1 class="contact-info-text">justinbifeld@gmail.com</h1>
+          </div>
+          <div class="col-md-6 col-lg-2 mb-5">
+            <h1 class="contact-info-text">847-915-9958</h1>
+          </div>
+          <div class="col-md-6 col-lg-2 mb-5">
+            <p><i class="fab fa-github fa-3x"></i></p>
+          </div>
+          <div class="col-md-6 col-lg-4 mb-5">
+            <a href="https://www.linkedin.com/in/justinbifeld/"><i class="fab fa-linkedin fa-3x"></i></a>
+          </div>
+        </div>
+      </div>
+      
   </div>
 </div>
 </template>
@@ -210,23 +234,6 @@
 <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.6.1/CSSRulePlugin.min.js" integrity="sha512-0bzaetZStCnsUgbCtGVxftzF/L32PNOnrMlYLXwBOKl8cUjTSSDfJVyyJsNwGoI0iE0WUqni2eEfO35kJjFj5g==" crossorigin="anonymous"></script>
 
 
-<script>
-import { Vue } from 'vue'
-import { BootstrapVue, BootstrapVueIcons } from 'bootstrap-vue'
-import 'bootstrap/dist/css/bootstrap.css'
-import 'bootstrap-vue/dist/bootstrap-vue.css'
-
-Vue.use(BootstrapVue)
-Vue.use(BootstrapVueIcons)
-</script>
-<head>
-  <link type="text/css" rel="stylesheet" href="//unpkg.com/bootstrap/dist/css/bootstrap.min.css" />
-  <link type="text/css" rel="stylesheet" href="//unpkg.com/bootstrap-vue@latest/dist/bootstrap-vue.min.css" />
-  <!-- Load Vue followed by BootstrapVue, and BootstrapVueIcons -->
-  <script src="//unpkg.com/vue@latest/dist/vue.min.js"></script>
-  <script src="//unpkg.com/bootstrap-vue@latest/dist/bootstrap-vue.min.js"></script>
-  <script src="//unpkg.com/bootstrap-vue@latest/dist/bootstrap-vue-icons.min.js"></script>
-</head>
 
 
 <script>
@@ -272,11 +279,15 @@ export default {
 #Projects{
   width: 100%;
   height: auto;
-  background: rgb(30, 24, 49);
+  background: rgba(56, 50, 77, 0);
 }
 .section-header-text{
   color: white;
   font-size: 30px;
+}
+.contact-info-text{
+  color: white;
+  font-size: 20px;
 }
 .projects-grid{
   background: white;
@@ -292,7 +303,7 @@ export default {
 }
 .projects-grid{
   padding: 20px;
-  background: rgb(30, 24, 49);
+  background: rgba(30, 24, 49, 0);
 }
 .project-row{
   margin: 20px
@@ -303,17 +314,30 @@ export default {
 #Experience{
   width: 100%;
   height: auto;
-  background: rgb(202, 124, 60);
+  background: rgba(202, 124, 60, 0);
 }
 #Education{
   width: 100%;
   height: auto;
-  background: rgb(77, 9, 80);
+  background: rgba(77, 9, 80, 0);
 }
 #Contact{
   width: 100%;
   height: auto;
-  background: rgb(26, 6, 100);
+  background: rgba(26, 6, 100, 0);
+}
+.border-line-1{
+  height: 5px;
+  background: rgb(0, 0, 0);
+}
+.border-line-2{
+  height: 5px;
+  width: 90%;
+  margin-left: 5%;
+  background: rgb(0, 0, 0);
+}
+.sections{
+  background: rgb(56, 50, 77);
 }
 /deep/ .modal-body { 
   text-align: center;
@@ -323,13 +347,14 @@ export default {
   background: black !important;
 }
 /deep/ .project-popup {
-  background: grey;
+  background: rgb(59, 51, 65);
+  color: white;
 }
 /deep/ .modal-header {
-  border-color: red;
+  border-color: rgb(39, 98, 102);
 }
 /deep/ .modal-footer {
-  border-color: red;
+  border-color: rgb(39, 98, 102);
 }
 
 </style>
