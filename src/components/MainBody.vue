@@ -20,7 +20,7 @@
       <h3 id="About-Degree">BS in Computer Engineering</h3>
       <h4 id="About-School">Univeristy of Illinois at Urbana-Champaign Dec '21</h4>
       <p class="About-Text">
-        About Text - Coming Soon!
+       
       </p>
     </section>
     <!-- Projects Section -->
