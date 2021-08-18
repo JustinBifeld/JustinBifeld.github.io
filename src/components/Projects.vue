@@ -25,7 +25,7 @@
                 <div @click="updateProjectBodies" v-b-modal.project-1 class="card project-card modal-container" content-class="your-class" >
                       <img class="project-card-image" src = "../assets/code.png">
                     <div class="card-body">
-                        <p class="card-text">This Webiste!</p>
+                        <p class="card-text">This Website!</p>
                     </div>
                 </div>
                 <b-modal class="modal fade project-modal" size="lg" content-class="project-popup" id="project-1" body-class="p-0" ok-only centered title="This Website!">
