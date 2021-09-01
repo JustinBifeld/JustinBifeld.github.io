@@ -1,5 +1,7 @@
 # website_justinb
 
+Personal website developed using Bootsrap Vue.  
+
 ## Project setup
 ```
 npm install
